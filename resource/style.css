@@ -2,6 +2,6 @@ body * {box-sizing: border-box; font-family: -apple-system,BlinkMacSystemFont,Se
 a {text-decoration: none; color: #333;}
 .content {max-width: 1440px; width: 100%; margin: 0 auto;}
 .list {padding: 60px; background-color: #f0f0f0;}
-.list ul {list-style: none;}
+.list ul {list-style: none; background-color: #fff;}
 .list ul li {margin: 20px;}
 .list ul li a {font-size: 24px; font-weight: bold;}
