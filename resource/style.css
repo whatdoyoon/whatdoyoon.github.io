@@ -1,0 +1,4 @@
+body * {box-sizing: border-box;}
+.content {max-width: 1440px; width: 100%; margin: 0 auto;}
+.list {padding: 60px; background-color: #f0f0f0;}
+.list ul {}
