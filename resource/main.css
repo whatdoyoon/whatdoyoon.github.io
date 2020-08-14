@@ -1,7 +1,9 @@
+div {width: 100%; height: 100%;}
 .content * {box-sizing: border-box;}
 .clearFix:after {display: block; clear: both; content: '';}
 .intro-wrapper {width: 100%; height: 500px;}
-.intro {float: left; width: 50%; text-align: center; font-size: 50px; font-weight: bold; padding: 70px;}
+.intro {float: left;width: 50%;text-align: center;font-size: 50px;font-weight: bold;padding: 70px;transition: all 0.5s ease .1s;}
+.intro:hover {transform: scale(1.05);}
 .info {float: left; width: 50%; height: 100%; font-size: 20px; font-weight: bold;}
-.spec {height: 50%;}
-.contact {height: 50%;}
+.spec {height: 50%; background-color: #00D8FF;}
+.contact {height: 50%; background-color: #1DDB16;}
