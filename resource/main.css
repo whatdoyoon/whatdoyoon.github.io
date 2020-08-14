@@ -1,0 +1,7 @@
+.content * {box-sizing: border-box;}
+.clearFix:after {display: block; clear: both; content: '';}
+.intro-wrapper {width: 100%;}
+.intro {float: left; width: 50%; text-align: center; font-size: 50px; font-weight: bold; padding: 70px;}
+.info {float: left; width: 50%; height: 100%;}
+.spec {height: 50%;}
+.contact {height: 50%;}
