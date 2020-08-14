@@ -1,29 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
  <head>
   <meta charset="UTF-8">
-  <meta name="Generator" content="EditPlus®">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-  <title>Portfolio List</title>
-  <link rel="stylesheet" href="resource/style.css" type="text/css">
+  <meta name="Keywords" content="html, css, jquery, portfolio">
+  <meta name="Description" content="이도윤">
+  <title>Doyoon Lee</title>
+  <link rel="stylesheet" href="resource/port.css" type="text/css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
  </head>
  <body>
-	<div class="content">
-		<div class="title">
-			<p>PORTFOLIO LIST</p>
-		</div>
-		<div class="list">
-			<ul>
-				<li>
-					<a href="resource/portfolio.html">기본 포트폴리오</a>
-				</li>
-				<li>
-					<a href="resource/solfood.html">Project - SolFood</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+ <script>
+	$(window).load(function(){
+		$(".loading").animate({"opacity": 0},500);
+	});
+	var loadData = {
+		wrapper: $(".loading"),
+		animType: 'svg',
+		loop: true,
+		prerender: true,
+		autoplay: true,
+		path: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/LEGO_loader.json'
+	};
+	var anim = bodymovin.loadAnimation(loadData);
+	anim.setSpeed(3.4);
+ </script>
+	<div class="loading"></div>
+	
  </body>
 </html>
