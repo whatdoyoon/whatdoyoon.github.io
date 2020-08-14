@@ -10,18 +10,25 @@
  </head>
  <body>
  <script>
-	var loadData = {
-		wrapper: $(".loading"),
-		animType: 'svg',
-		loop: true,
-		prerender: true,
-		autoplay: true,
-		path: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/LEGO_loader.json'
-	};
-	var anim = bodymovin.loadAnimation(loadData);
-	anim.setSpeed(3.4);
+
  </script>
-	<div class="loading"></div>
+	<div class="loader-wrapper">
+		<div class="truck-wrapper">
+		  <div class="truck">
+			<div class="truck-container"></div>
+			<div class="glases"></div>
+			<div class="bonet"></div>
+
+			<div class="base"></div>
+
+			<div class="base-aux"></div>
+			<div class="wheel-back"></div>
+			<div class="wheel-front"></div>
+
+			<div class="smoke"></div>
+		  </div>
+		</div>
+	</div>
 	
  </body>
 </html>
