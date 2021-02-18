@@ -1,14 +1,84 @@
+@charset "utf-8";
+
 html, body {width: 100%; height: 100%; margin: 0;}
 ul, p, h2, h3 {padding: 0; margin: 0;}
 li {list-style: none;}
-.contents {position: relative; width: 100%; max-width: 1440px; min-width: 320px; margin: 0 auto; padding-bottom: 10%;}
+.contents {position: relative; width: 100%; max-width: 1440px; min-width: 320px; margin: 0 auto;}
 .contents * {font-family: 'Roboto', sans-serif; line-height: 1.2; text-decoration: none; box-sizing: border-box; color: #000;}
 .contents img {width: 100%;}
 .contents .color_txt {color: #EDA900;}
 .clearFix:after {display: block; clear: both; content: '';}
 
+.contents .top_bar {position: relative; display: table; width: 100%; height: 80px; background-color: #6F6F6F;}
+.contents .top_bar .middle {display: table-cell; vertical-align: middle;}
+.contents .top_bar p {font-size: 30px; font-weight: bold; color: #fff; padding-left: 10%; margin: 0;}
+.contents .top_bar a {position: absolute; top: 50%; transform: translateY(-50%); right: 10%; display: inline-block; line-height: 1.2; border-radius: 50vh; color: #fff; background-color: #000; padding: 4px 10px;}
+.contents .top_list {position: relative; border-top: 1px solid #fff; background-color: #6F6F6F; overflow: hidden;}
+.contents .top_list > li {position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin-left: 100%; padding: 0 10%;}
+.contents .top_list > li:first-child {position: relative; margin-left: 0;}
+.contents .top_list p {font-size: 28px; color: #fff; padding: 40px 0;}
+.contents .top_list button {display: block; width: 100%; height: 65px; font-size: 25px; line-height: 1.2; text-align: left; border: 2px solid #EDA900; border-radius: 50vh; background-color: transparent; color: #fff; margin-bottom: 20px; cursor: pointer; padding: 0 5%;}
+.contents .top_list .views {float: right;}
+.contents .top_list .carousel {text-align: center; font-size: 0; padding-bottom: 3%;}
+.contents .top_list .carousel li {display: inline-block;}
+.contents .top_list .carousel li a {display: block; width: 12px; height: 12px; border: 1px solid #EDA900; border-radius: 50vh; margin: 0 5px;}
+.contents .top_list .carousel li.active a {background-color: #EDA900;}
 
-/*@media (max-width: 768px){*/
+.contents .title-area {position: relative; text-align: center;}
+.contents .tag_series {position: relative; border-radius: 50vh; font-size: 28px; text-align: left; background-color: #EDA900; color: #fff; padding: 1% 0 1% 2.5%; margin: 5% 20%;}
+.contents .tag_series a {position: absolute; top: 0; right: 0; width: 80%; height: 100%; border: 1px solid #000; border-radius: 50vh; background-color: #fff; color: #000; padding: 1.3% 5%;}
+.contents .tag_series a span {position: absolute; top: auto; right: 5%; color: #9E9E9E;}
+.contents .title-area .title {font-size: 65px; margin: 0 0 2%;}
+.contents .title-area h2 {font-size: 42px; color: #9E9E9E; margin: 0;}
+.contents .title-area .info {font-size: 32px; margin-top: 5%;}
+.contents .title-area .info * {color: #B0B0B0;}
+.contents .title-area .info .date {display: inline-block; border-right: 1px solid; padding: 0 2%;}
+.contents .title-area .info .read {display: inline-block; padding: 0 2%;}
+.contents .title-area .share {position: absolute; bottom: 0; right: 0; padding-right: 5%;}
+
+.contents .container_list {padding: 8% 3%;}
+.contents .main-list .thumb img {height: 400px;}
+.contents .list-info {position: relative; padding: 2% 0; margin: 0;}
+.contents .list-info .detail {position: relative;}
+.contents .list-info .detail > div {padding-left: 3%;}
+.contents .list-info .detail .num {position: absolute; top: 0; left: 0;}
+.contents .list-info .detail .num, .contents .list-info .detail h2 {font-size: 32px; color: #000;}
+.contents .list-info .detail h3 {font-size: 24px; color: #9E9E9E; padding-top: 1.5%;}
+.contents .main-list .score {position: absolute; top: 50%; right: 16%; transform: translateY(-50%); font-size: 40px;}
+.contents .main-list .star {position: absolute; top: 50%; right: 4%; transform: translateY(-50%); width: 45px;}
+.contents .main-list .list-desc {margin-top: 8%;}
+.contents .main-list .list-desc .img-area {display: inline-block; width: 100px; height: 100px; border-radius: 50vh; text-align: center; background-color: #eaeaea; vertical-align: top;}
+.contents .main-list .list-desc .desc {display: inline-block; width: 90%; font-size: 28px; padding-left: 4%;}
+.contents .main-list .go-detail-page {display: block; font-size: 28px; text-align: right; margin: 8% 3% 8% 0;}
+.contents .main-list .go-detail-page span {color: #9E9E9E;}
+.contents .container_list .more-btn {width: 300px; margin: 0 auto;}
+.contents .container_list .more-btn button {width: 100%; height: 80px; font-size: 32px; background-color: transparent; border-radius: 50vh;}
+
+.contents .common-area h3 {font-size: 48px; display: inline-block; margin-right: 5%;}
+.contents .common-area .series-rank a {font-size: 48px;}
+.contents .common-area .series-rank {text-align: center; padding-top: 10%;}
+.contents .common-area .series-rank .favorites {display: inline-block; line-height: 1.2; border-radius: 50vh; color: #fff; background-color: #EDA900; padding: 6px 20px;}
+.contents .common-area .series-rank .series-list {padding: 5% 10%;}
+.contents .common-area .series-rank .series-list a {display: block; width: 100%; height: 65px; font-size: 25px; line-height: 63px; text-align: left; border: 2px solid #9E9E9E; border-radius: 50vh; background-color: transparent; color: #000; margin-bottom: 3.2vw; cursor: pointer; padding: 0 5%; margin-bottom: 5%;}
+.contents .common-area .series-rank .num {font-size: 35px;}
+.contents .common-area .series-rank .views {float: right; line-height: 63px;}
+.contents .common-area .series-rank .series-list a span {color: #9E9E9E;}
+
+.contents .common-area .tag-area, .contents .common-area .category-area, .contents .common-area .location {padding: 0 10% 10%;}
+.contents .common-area .tag-area h3, .contents .common-area .category-area h3, .contents .common-area .location h3 {display: block; border-bottom: 2px solid #9E9E9E; margin: 0 0 5% 0;}
+.contents .common-area .tag-list {text-align: center;}
+.contents .common-area .tag-list li {padding-bottom: 2%;}
+.contents .common-area .tag-list a {font-size: 32px; color: #9E9E9E; margin: 0 6.5%;}
+
+.contents .common-area .category-list li {padding: 0 0 1.5% 5%;}	
+.contents .common-area .category-list a {font-size: 32px; color: #000;}
+
+.contents .common-area .map-area {height: 700px; background-color: #EAEAEA;}
+.contents .common-area .city-list {margin-top: 3%;}
+.contents .common-area .city-list a {font-size: 32px; line-height: 1.5; border-right: 1px solid #9E9E9E; padding-right: 1.5%;}
+.contents .common-area .city-list a:last-child {border-right: none;}
+
+@media (max-width: 768px){
 	.contents .top_bar {position: relative; display: table; width: 100%; height: 80px; background-color: #6F6F6F;}
 	.contents .top_bar .middle {display: table-cell; vertical-align: middle;}
 	.contents .top_bar p {font-size: 30px; font-weight: bold; color: #fff; padding-left: 10%; margin: 0;}
@@ -50,8 +120,8 @@ li {list-style: none;}
 	.contents .main-list .list-desc .desc {display: inline-block; width: 83%; font-size: 3.73vw; padding-left: 4%;}
 	.contents .main-list .go-detail-page {display: block; font-size: 3.73vw; text-align: right; margin: 8% 3% 8% 0;}
 	.contents .main-list .go-detail-page span {color: #9E9E9E;}
-	.contents .main-list .more-btn {width: 40vw; margin: 0 auto;}
-	.contents .main-list .more-btn button {width: 100%; height: 10.66vw; font-size: 4.26vw; background-color: transparent; border-radius: 50vh;}
+	.contents .container_list .more-btn {width: 40vw; margin: 0 auto;}
+	.contents .container_list .more-btn button {width: 100%; height: 10.66vw; font-size: 4.26vw; background-color: transparent; border-radius: 50vh;}
 
 	.contents .common-area h3 {font-size: 4vw; display: inline-block; margin-right: 5%;}
 	.contents .common-area .series-rank a {font-size: 4vw;}
@@ -72,11 +142,47 @@ li {list-style: none;}
 	.contents .common-area .category-list li {padding: 0 0 1.5% 5%;}	
 	.contents .common-area .category-list a {font-size: 3.73vw; color: #000;}
 	
+	.contents .common-area .map-area {height: 66vw;}
 	.contents .common-area .city-list {margin-top: 3%;}
 	.contents .common-area .city-list a {font-size: 3.73vw; line-height: 1.5; border-right: 1px solid #9E9E9E; padding-right: 1.5%;}
 	.contents .common-area .city-list a:last-child {border-right: none;}
-/*}*/
+}
 
-/*@media (max-width: 375px){
-	.contents .top_list button {font-size: 4vw;}
-}8/
+@media (max-width: 320px){
+	.contents .top_bar {height: 80px;}
+	.contents .top_bar p {font-size: 30px;}
+	.contents .top_bar a {padding: 4px 10px;}
+	.contents .top_list p {font-size: 20px; padding: 13px 0;}
+	.contents .top_list button {height: 33px; font-size: 13px; margin-bottom: 10px;}
+	.contents .top_list .carousel li a {width: 12px; height: 12px; margin: 0 5px;}
+
+	.contents .tag_series {font-size: 14px;}
+	.contents .title-area .title {font-size: 20px;}
+	.contents .title-area h2 {font-size: 13px;}
+	.contents .title-area .info {font-size: 14px;}
+
+	.contents .main-list .thumb img {height: 128px;}
+	.contents .list-info .detail .num, .contents .list-info .detail h2 {font-size: 16px;}
+	.contents .list-info .detail h3 {font-size: 10px;}
+	.contents .main-list .score {font-size: 19px;}
+	.contents .main-list .star {width: 30px;}
+	.contents .main-list .list-desc .img-area {width: 43px; height: 43px;}
+	.contents .main-list .list-desc .desc {font-size: 12px;}
+	.contents .main-list .go-detail-page {font-size: 12px;}
+	.contents .container_list .more-btn {width: 128px;}
+	.contents .container_list .more-btn button {height: 34px; font-size: 14px;}
+
+	.contents .common-area h3 {font-size: 13px;}
+	.contents .common-area .series-rank a {font-size: 13px;}
+	.contents .common-area .series-rank .favorites {padding: 4px 10px;}
+	.contents .common-area .series-rank .series-list a {height: 33px; font-size: 13px; line-height: 33px; margin-bottom: 10px;}
+	.contents .common-area .series-rank .num {font-size: 18px;}
+	.contents .common-area .series-rank .views {line-height: 33px;}
+	
+	.contents .common-area .tag-list a {font-size: 12px;}
+
+	.contents .common-area .category-list a {font-size: 12px;}
+	
+	.contents .common-area .map-area {height: 210px;}
+	.contents .common-area .city-list a {font-size: 12px;}
+}
