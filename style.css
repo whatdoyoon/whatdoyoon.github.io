@@ -1,0 +1,82 @@
+html, body {width: 100%; height: 100%; margin: 0;}
+ul, p, h2, h3 {padding: 0; margin: 0;}
+li {list-style: none;}
+.contents {position: relative; width: 100%; max-width: 1440px; min-width: 320px; margin: 0 auto; padding-bottom: 10%;}
+.contents * {font-family: 'Roboto', sans-serif; line-height: 1.2; text-decoration: none; box-sizing: border-box; color: #000;}
+.contents img {width: 100%;}
+.contents .color_txt {color: #EDA900;}
+.clearFix:after {display: block; clear: both; content: '';}
+
+
+/*@media (max-width: 768px){*/
+	.contents .top_bar {position: relative; display: table; width: 100%; height: 80px; background-color: #6F6F6F;}
+	.contents .top_bar .middle {display: table-cell; vertical-align: middle;}
+	.contents .top_bar p {font-size: 30px; font-weight: bold; color: #fff; padding-left: 10%; margin: 0;}
+	.contents .top_bar a {position: absolute; top: 50%; transform: translateY(-50%); right: 10%; display: inline-block; line-height: 1.2; border-radius: 50vh; color: #fff; background-color: #000; padding: 4px 10px;}
+	.contents .top_list {position: relative; border-top: 1px solid #fff; background-color: #6F6F6F; overflow: hidden;}
+	.contents .top_list > li {position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin-left: 100%; padding: 0 10%;}
+	.contents .top_list > li:first-child {position: relative; margin-left: 0;}
+	.contents .top_list p {font-size: 20px; color: #fff; padding: 4vw 0;}
+	.contents .top_list button {display: block; width: 100%; height: 10.33vw; font-size: 4vw; line-height: 1.2; text-align: left; border: 2px solid #EDA900; border-radius: 50vh; background-color: transparent; color: #fff; margin-bottom: 3.2vw; cursor: pointer; padding: 0 5%;}
+	.contents .top_list .views {float: right;}
+	.contents .top_list .carousel {text-align: center; font-size: 0; padding-bottom: 3%;}
+	.contents .top_list .carousel li {display: inline-block;}
+	.contents .top_list .carousel li a {display: block; width: 12px; height: 12px; border: 1px solid #EDA900; border-radius: 50vh; margin: 0 5px;}
+	.contents .top_list .carousel li.active a {background-color: #EDA900;}
+
+	.contents .title-area {position: relative; text-align: center;}
+	.contents .tag_series {position: relative; border-radius: 50vh; font-size: 4.26vw; text-align: left; background-color: #EDA900; color: #fff; padding: 1% 0 1% 2.5%; margin: 5% 10%;}
+	.contents .tag_series a {position: absolute; top: 0; right: 0; width: 80%; height: 100%; border: 1px solid #000; border-radius: 50vh; background-color: #fff; color: #000; padding: 1% 5%;}
+	.contents .tag_series a span {position: absolute; top: auto; right: 5%; color: #9E9E9E;}
+	.contents .title-area .title {font-size: 6.4vw; margin: 0 0 2%;}
+	.contents .title-area h2 {font-size: 4.2vw; color: #9E9E9E; margin: 0;}
+	.contents .title-area .info {font-size: 4.26vw; color: #B0B0B0; margin-top: 5%;}
+	.contents .title-area .info .date {display: inline-block; border-right: 1px solid; padding: 0 2%;}
+	.contents .title-area .info .read {display: inline-block; padding: 0 2%;}
+	.contents .title-area .share {position: absolute; bottom: 0; right: 0; padding-right: 5%;}
+
+	.contents .container_list {padding: 8% 3%;}
+	.contents .main-list .thumb img {height: 40vw;}
+	.contents .list-info {position: relative; padding: 2% 0; margin: 0;}
+	.contents .list-info .detail {position: relative;}
+	.contents .list-info .detail > div {padding-left: 5%;}
+	.contents .list-info .detail .num {position: absolute; top: 0; left: 0;}
+	.contents .list-info .detail .num, .contents .list-info .detail h2 {font-size: 5vw; color: #000;}
+	.contents .list-info .detail h3 {font-size: 3.2vw; color: #9E9E9E; padding-top: 1.5%;}
+	.contents .main-list .score {position: absolute; top: 50%; right: 12%; transform: translateY(-50%); font-size: 6vw;}
+	.contents .main-list .star {position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 30px;}
+	.contents .main-list .list-desc {margin-top: 8%;}
+	.contents .main-list .list-desc .img-area {display: inline-block; width: 13.3vw; height: 13.3vw; border-radius: 50vh; text-align: center; background-color: #eaeaea; vertical-align: top;}
+	.contents .main-list .list-desc .desc {display: inline-block; width: 83%; font-size: 3.73vw; padding-left: 4%;}
+	.contents .main-list .go-detail-page {display: block; font-size: 3.73vw; text-align: right; margin: 8% 0;}
+	.contents .main-list .go-detail-page span {color: #9E9E9E;}
+	.contents .main-list .more-btn {width: 40vw; margin: 0 auto;}
+	.contents .main-list .more-btn button {width: 100%; height: 10.66vw; font-size: 4.26vw; background-color: transparent; border-radius: 50vh;}
+
+	.contents .common-area h3 {font-size: 4vw; display: inline-block; margin-right: 5%;}
+	.contents .common-area .series-rank a {font-size: 4vw;}
+	.contents .common-area .series-rank {text-align: center; padding-top: 10%;}
+	.contents .common-area .series-rank .favorites {display: inline-block; line-height: 1.2; border-radius: 50vh; color: #fff; background-color: #EDA900; padding: 4px 10px;}
+	.contents .common-area .series-rank .series-list {padding: 5% 10%;}
+	.contents .common-area .series-rank .series-list a {display: block; width: 100%; height: 10.33vw; font-size: 4vw; line-height: 10.33vw; text-align: left; border: 2px solid #9E9E9E; border-radius: 50vh; background-color: transparent; color: #000; margin-bottom: 3.2vw; cursor: pointer; padding: 0 5%; margin-bottom: 5%;}
+	.contents .common-area .series-rank .num {font-size: 5.5vw;}
+	.contents .common-area .series-rank .views {float: right; line-height: 10.33vw;}
+	.contents .common-area .series-rank .series-list a span {color: #9E9E9E;}
+	
+	.contents .common-area .tag-area, .contents .common-area .category-area, .contents .common-area .location {padding: 0 6% 10%;}
+	.contents .common-area .tag-area h3, .contents .common-area .category-area h3, .contents .common-area .location h3 {display: block; border-bottom: 2px solid #9E9E9E; margin: 0 0 5% 0;}
+	.contents .common-area .tag-list {text-align: center;}
+	.contents .common-area .tag-list li {padding-bottom: 2%;}
+	.contents .common-area .tag-list a {font-size: 3.73vw; color: #9E9E9E; margin: 0 1.5%;}
+
+	.contents .common-area .category-list li {padding: 0 0 1.5% 5%;}	
+	.contents .common-area .category-list a {font-size: 3.73vw; color: #000;}
+	
+	.contents .common-area .city-list {margin-top: 3%;}
+	.contents .common-area .city-list a {font-size: 3.73vw; line-height: 1.5; border-right: 1px solid #9E9E9E; padding-right: 1.5%;}
+	.contents .common-area .city-list a:last-child {border-right: none;}
+/*}*/
+
+/*@media (max-width: 375px){
+	.contents .top_list button {font-size: 4vw;}
+}8/
